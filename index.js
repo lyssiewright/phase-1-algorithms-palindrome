@@ -1,9 +1,17 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let stringLength = word.length
+  for (let i = 0; i < stringLength/2; i++){
+    if(word[i] !== word[stringLength-1-i]){
+      return false;
+    }
+    return true;
+  }
 }
-
+isPalindrome('hannah')
 /* 
-  Add your pseudocode here
+  function receives a string
+  loop through the string forward and backward
+  determine if the arrays are the same
 */
 
 /*
